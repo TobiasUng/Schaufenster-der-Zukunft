@@ -62,7 +62,7 @@ public class Blade : MonoBehaviour
 		}
 		else
 		{
-			//circleCollider.enabled = false;
+			circleCollider.enabled = false;
 		}
 
 		previousPosition = newPosition;

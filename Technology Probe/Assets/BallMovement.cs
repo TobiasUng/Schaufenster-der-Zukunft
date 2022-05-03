@@ -7,10 +7,11 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
 
     public UDPReceive udpReceive;
+    Vector3 previousPos, nextPos;
 
     void Start()
     {
-
+        previousPos = gameObject.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -27,7 +28,11 @@ public class BallMovement : MonoBehaviour
         float y = float.Parse(info[1]) / 100 - 3;
         //float z = -10 + float.Parse(info[2]) / 1000;
 
-        gameObject.transform.localPosition = new Vector3(x, y, gameObject.transform.localPosition.z);
+        nextPos = new Vector3(x, y, gameObject.transform.localPosition.z);
+
+        gameObject.transform.localPosition = Vector3.Lerp(previousPos, nextPos, 0.2f);
+
+        previousPos = gameObject.transform.localPosition;
 
 
     }

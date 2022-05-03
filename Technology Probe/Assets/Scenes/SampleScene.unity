@@ -569,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3304182326068612467, guid: 4bdfed84fb239f24294082976d566d76, type: 3}
       propertyPath: minCuttingVelocity
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bdfed84fb239f24294082976d566d76, type: 3}
