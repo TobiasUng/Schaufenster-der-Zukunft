@@ -3,7 +3,7 @@ from cvzone.ColorModule import ColorFinder
 import cv2
 import socket
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 cap.set(3, 1280)
 cap.set(4, 720)
 
@@ -12,6 +12,7 @@ h, w, _ = img.shape
 
 myColorFinder = ColorFinder(True)
 hsvVals = {'hmin': 33, 'smin': 72, 'vmin': 126, 'hmax': 58, 'smax': 255, 'vmax': 255}
+
 
 #sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #serverAddressPort = ("127.0.0.1", 5053)

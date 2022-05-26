@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FruitSpawner : MonoBehaviour
 {
-    public GameObject fruitPrefab;
+    public GameObject[] fruitPrefabs;
     public Transform[] spawnPoints;
+
+    public float startForce = 1f;
+    public float startTorque = 3f;
 
     public float minDelay = 0.1f;
     public float maxDelay = 1f;
@@ -32,8 +35,13 @@ public class FruitSpawner : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
 
-            GameObject spawnedFruit = Instantiate(fruitPrefab, spawnPoint.position, spawnPoint.rotation);
-            Destroy(spawnedFruit, 5f);
+            int index = Random.Range(0, fruitPrefabs.Length);
+            print(index);
+
+            GameObject spawnedFruit = Instantiate(fruitPrefabs[index], spawnPoint.position, spawnPoint.rotation);
+            spawnedFruit.GetComponent<Rigidbody2D>().AddForce(-spawnedFruit.transform.up * startForce, ForceMode2D.Impulse);
+            spawnedFruit.GetComponent<Rigidbody2D>().AddTorque(startTorque, ForceMode2D.Impulse);
+            //Destroy(spawnedFruit, 5f);
 
         }
     }

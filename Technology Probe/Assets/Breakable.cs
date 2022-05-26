@@ -7,7 +7,7 @@ public class Breakable : MonoBehaviour
 {
     public GameObject fruitSlicedPrefab;
 
-    public float startForce = 15f;
+    public float startForce = 5f;
 
     [SerializeField] private UnityEvent sliceEvent;
 
@@ -40,9 +40,9 @@ public class Breakable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
-        rb.AddTorque(3, ForceMode2D.Impulse);
+        //rb = GetComponent<Rigidbody2D>();
+        //rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
+        //rb.AddTorque(3, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
