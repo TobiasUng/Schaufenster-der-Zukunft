@@ -1,0 +1,39 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class TitleText : MonoBehaviour
+{
+	public TMP_Text txt;
+	
+    // Start is called before the first frame update
+	public int i = 0;
+	public string[] titles = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"};
+    void Start()
+    {
+		txt = GetComponent<TMP_Text> ();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+	
+    public void changeTextFront()
+    {
+        txt.text = titles[i];
+		txt.text = titles[i];
+		i++;
+		if(i>7)
+		{
+			i = 0;
+		}
+    }
+	
+	
+    public void changeTextBack()
+    {
+        txt.text = "blah blah text".ToString();
+    }
+}

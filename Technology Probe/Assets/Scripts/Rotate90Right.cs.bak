@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate90 : MonoBehaviour
+public class Rotate90Right : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,9 +16,9 @@ public class Rotate90 : MonoBehaviour
         
     }
 
-    public void rotate()
+    public void rotateRight()
     {
-        transform.Rotate(new Vector3(0, 90, 0));
+        transform.Rotate(new Vector3(0, 45, 0) *(50* Time.deltaTime));
     }
 
 }
