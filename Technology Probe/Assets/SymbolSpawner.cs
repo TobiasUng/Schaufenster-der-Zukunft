@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FruitSpawner : MonoBehaviour
+public class SymbolSpawner : MonoBehaviour
 {
-    public GameObject[] fruitPrefabs;
+    public GameObject[] symbolPrefabs;
+    public int symbol_count = 0;
+    public List<int> sequence = new List<int>();
     public Transform[] spawnPoints;
 
     public float startForce = 1f;
@@ -16,6 +18,14 @@ public class FruitSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i < symbolPrefabs.Length; i++)
+        {
+            for(int j = 0; j < symbol_count; j++)
+            {
+                sequence.Add(i);
+            }
+        }
+
         StartCoroutine(SpawnFruits());
     }
 
@@ -27,7 +37,7 @@ public class FruitSpawner : MonoBehaviour
 
     IEnumerator SpawnFruits()
     {
-        while (true)
+        while (sequence.Count > 0)
         {
             float delay = Random.Range(minDelay, maxDelay);
             yield return new WaitForSeconds(delay);
@@ -35,10 +45,14 @@ public class FruitSpawner : MonoBehaviour
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             Transform spawnPoint = spawnPoints[spawnIndex];
 
-            int index = Random.Range(0, fruitPrefabs.Length);
-            print(index);
+            //int index = Random.Range(0, symbolPrefabs.Length);
+            int index = Random.Range(0, sequence.Count);
+           
 
-            GameObject spawnedFruit = Instantiate(fruitPrefabs[index], spawnPoint.position, spawnPoint.rotation);
+            GameObject spawnedFruit = Instantiate(symbolPrefabs[sequence[index]], spawnPoint.position, spawnPoint.rotation);
+            sequence.RemoveAt(index);
+
+
             spawnedFruit.GetComponent<Rigidbody2D>().AddForce(-spawnedFruit.transform.up * startForce, ForceMode2D.Impulse);
             spawnedFruit.GetComponent<Rigidbody2D>().AddTorque(startTorque, ForceMode2D.Impulse);
             //Destroy(spawnedFruit, 5f);
