@@ -21,7 +21,7 @@ public class TitleText : MonoBehaviour
         
     }
 	
-    public void changeTextFront()
+    public void changeTitleFront()
     {
 		i++;
         txt.text = titles[i-1];
@@ -32,7 +32,7 @@ public class TitleText : MonoBehaviour
     }
 	
 	
-    public void changeTextBack()
+    public void changeTitleBack()
     {
 		i--;
         txt.text = titles[i+1];

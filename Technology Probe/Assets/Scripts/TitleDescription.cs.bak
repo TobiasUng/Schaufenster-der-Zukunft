@@ -8,7 +8,10 @@ public class TitleDescription : MonoBehaviour
 	
     // Start is called before the first frame update
 	public int i = 0;
-	public string[] titles = {"Hier soll stehen", "Dafür wissen wir", "Ein Test Objekt", "Mal was anderes", "Jetzt kommt das", "Könnt ihr lesen", "Deswegen dieser Text", "Nicht schon wieder"};
+	public string[] titles = {"Gemütliche Fahrt \n Stau \n Schädliche Abgase", "Gleichzeitig eine sportliche Aktivität \n Keine Abgase \n Einsatz abhängig von Wetter und Länge des Weges",
+	"Meist importiert aus Chile \n 1kg (2-3 Stück) benötigt 1000l Wasser \n Gesundes “superfood”", "In Österreich angebaut \n Gesund \n Kein “exotischer” Geschmack wie bei importierten Früchten",
+	"Benötigt wenig Brennstoff für viel Energie \n Weniger Emissionen \n Risiko eines Reaktorunfalls", "Erneuerbare Energie \n Wind is nicht immer verfügbar (nur Unterstützende Rolle) \n Saubere Energiequelle",
+	"Schädliche Abgase \n Kürzere Reisezeit als Zug \n Jedes Ziel erreichbar", "Klimafreundlich reisen \n Längere Reisezeit als Flugzeug \n Manche Ziele nicht erreichbar"};
     void Start()
     {
 		txt = GetComponent<TMP_Text> ();
@@ -21,7 +24,7 @@ public class TitleDescription : MonoBehaviour
         
     }
 	
-    public void changeDescFront()
+    public void changeDescrFront()
     {
 		i++;
         txt.text = titles[i-1];
@@ -32,7 +35,7 @@ public class TitleDescription : MonoBehaviour
     }
 	
 	
-    public void changeDescBack()
+    public void changeDescrBack()
     {
 		i--;
         txt.text = titles[i+1];

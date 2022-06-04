@@ -8,7 +8,7 @@ public class TitleText : MonoBehaviour
 	
     // Start is called before the first frame update
 	public int i = 0;
-	public string[] titles = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"};
+	public string[] titles = {"Auto", "Fahrrad", "Avocado", "Apfel", "Atomkraftwerk", "Windkraftwerk", "Flugzeug", "Zug"};
     void Start()
     {
 		txt = GetComponent<TMP_Text> ();

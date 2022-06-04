@@ -429,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 768712793}
-  - component: {fileID: 768712792}
+  - component: {fileID: 768712794}
   m_Layer: 0
   m_Name: FruitSpawner
   m_TagString: Untagged
@@ -437,34 +437,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &768712792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768712791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe233e9d92ee6c4681397b7d0b9e4c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  symbolPrefabs:
-  - {fileID: 8732739175038930201, guid: 1464b8aa3ef022f45880ebae68c465ae, type: 3}
-  - {fileID: 8732739175038930201, guid: c7161ae274982474abef389238b3c2c8, type: 3}
-  - {fileID: 8732739175038930201, guid: 0d5ec5ded6919914f9dabfaac0d95a92, type: 3}
-  symbol_count: 10
-  sequence: 
-  spawnPoints:
-  - {fileID: 706344295}
-  - {fileID: 1438248420}
-  - {fileID: 657474108}
-  - {fileID: 1028790862}
-  - {fileID: 1088337741}
-  startForce: 1
-  startTorque: 3
-  minDelay: 1
-  maxDelay: 2
 --- !u!4 &768712793
 Transform:
   m_ObjectHideFlags: 0
@@ -485,6 +457,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &768712794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768712791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4e1c7abd7acdd41a2d35b00f58dd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  symbolPrefabs:
+  - {fileID: 8732739175038930201, guid: 1464b8aa3ef022f45880ebae68c465ae, type: 3}
+  - {fileID: 8732739175038930201, guid: c7161ae274982474abef389238b3c2c8, type: 3}
+  - {fileID: 8732739175038930201, guid: 0d5ec5ded6919914f9dabfaac0d95a92, type: 3}
+  symbol_count: 5
+  sequence: 
+  spawnPoints:
+  - {fileID: 706344295}
+  - {fileID: 1438248420}
+  - {fileID: 657474108}
+  - {fileID: 1028790862}
+  - {fileID: 1088337741}
+  startForce: 1
+  startTorque: 3
+  minDelay: 0.1
+  maxDelay: 1
 --- !u!1 &786485667
 GameObject:
   m_ObjectHideFlags: 0
