@@ -23,22 +23,25 @@ public class TitleText : MonoBehaviour
 	
     public void changeTitleFront()
     {
-		i++;
-        txt.text = titles[i-1];
-		if(i>7)
-		{
-			i = 0;
-		}
+        if (i == 7)
+        {
+            i = -1;
+        }
+
+        i++;
+        txt.text = titles[i];
+		
     }
 	
 	
     public void changeTitleBack()
     {
-		i--;
-        txt.text = titles[i+1];
-		if(i<0)
-		{
-			i = 7;
-		}
+        if (i == 0)
+        {
+            i = 8;
+        }
+
+        i--;
+        txt.text = titles[i];
     }
 }

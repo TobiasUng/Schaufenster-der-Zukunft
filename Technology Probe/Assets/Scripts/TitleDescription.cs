@@ -26,22 +26,24 @@ public class TitleDescription : MonoBehaviour
 	
     public void changeDescrFront()
     {
-		i++;
-        txt.text = titles[i-1];
-		if(i>7)
-		{
-			i = 0;
-		}
+        if (i == 7)
+        {
+            i = -1;
+        }
+
+        i++;
+        txt.text = titles[i];
     }
 	
 	
     public void changeDescrBack()
     {
-		i--;
-        txt.text = titles[i+1];
-		if(i<0)
-		{
-			i = 7;
-		}
+        if (i == 0)
+        {
+            i = 8;
+        }
+
+        i--;
+        txt.text = titles[i];
     }
 }

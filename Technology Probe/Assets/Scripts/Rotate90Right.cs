@@ -18,7 +18,7 @@ public class Rotate90Right : MonoBehaviour
 
     public void rotateRight()
     {
-        transform.Rotate(new Vector3(0, 45, 0) *(34* Time.deltaTime));
+        transform.Rotate(new Vector3(0, 45, 0));
     }
 
 }
