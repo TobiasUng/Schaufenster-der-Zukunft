@@ -37,7 +37,7 @@ public class BallMovement : MonoBehaviour
 
 
 
-        Pos = camera.ScreenToWorldPoint(new Vector3(float.Parse(info[1]), -1*(float.Parse(info[0])-1920), 0));
+        Pos = camera.ScreenToWorldPoint(new Vector3(float.Parse(info[1]), float.Parse(info[0]), 0));
 
         print(Pos);
         //

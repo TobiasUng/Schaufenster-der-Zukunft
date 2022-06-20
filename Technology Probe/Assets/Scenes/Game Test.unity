@@ -473,7 +473,7 @@ MonoBehaviour:
   - {fileID: 8732739175038930201, guid: 1464b8aa3ef022f45880ebae68c465ae, type: 3}
   - {fileID: 8732739175038930201, guid: c7161ae274982474abef389238b3c2c8, type: 3}
   - {fileID: 8732739175038930201, guid: 0d5ec5ded6919914f9dabfaac0d95a92, type: 3}
-  symbol_count: 100
+  symbol_count: 5
   sequence: 
   spawnPoints:
   - {fileID: 706344295}
@@ -483,8 +483,8 @@ MonoBehaviour:
   - {fileID: 1088337741}
   startForce: 1
   startTorque: 3
-  minDelay: 0.01
-  maxDelay: 0.2
+  minDelay: 0.1
+  maxDelay: 1
 --- !u!1 &786485667
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   port: 5053
   startRecieving: 1
-  printToConsole: 1
+  printToConsole: 0
   data: 
 --- !u!4 &1893429564
 Transform:
