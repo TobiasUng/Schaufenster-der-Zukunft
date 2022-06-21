@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SymbolSpawnerTest : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class SymbolSpawnerTest : MonoBehaviour
     public float minDelay = 0.1f;
     public float maxDelay = 1f;
 
+    bool hasEnded = false;
+
+    public GameObject endButton;
+
+    [SerializeField] private UnityEvent endEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +34,25 @@ public class SymbolSpawnerTest : MonoBehaviour
         }
 
         StartCoroutine(SpawnFruits());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        //print(sequence.Count);
+        if (sequence.Count <= 0 && !hasEnded)
+        {
+            print("1");
+            hasEnded = true;
+            Waiter.Wait(6f, () =>
+            {
+                print("2");
+                endButton.SetActive(true);
+            });
+            
+        }
     }
 
     IEnumerator SpawnFruits()

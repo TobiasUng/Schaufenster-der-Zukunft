@@ -5,14 +5,20 @@ using UnityEngine.Events;
 
 public class Breakable : MonoBehaviour
 {
-    public GameObject fruitSlicedPrefab;
+    public GameObject symbolSlicedPrefab;
 
     public float startForce = 5f;
 
+    public bool isRespawn = false;
+
     [SerializeField] private UnityEvent sliceEvent;
+
+    
 
 
     Rigidbody2D rb;
+
+    
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -25,14 +31,27 @@ public class Breakable : MonoBehaviour
 
             sliceEvent.Invoke();
 
-            GameObject slicedFruit = Instantiate(fruitSlicedPrefab, transform.position, transform.rotation);
+            GameObject slicedFruit = Instantiate(symbolSlicedPrefab, transform.position, transform.rotation);
             Destroy(slicedFruit, 5f);
 
 
+            if (isRespawn)
+            {
+                gameObject.SetActive(false);
+                Waiter.Wait(2f, () =>
+                {
+                    // Just to make sure by the time we're back to activate it, it still exists and wasn't destroyed.
+                    if (gameObject != null)
+                        gameObject.SetActive(true);
+                });
+            }
 
-            Destroy(gameObject);
-
+            else
+            {
+                Destroy(gameObject);
+            }
             
+
         }
     }
 

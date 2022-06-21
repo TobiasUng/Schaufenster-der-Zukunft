@@ -24,7 +24,15 @@ public class BreakableSpawn : MonoBehaviour
 			    float time = 2.0f;
 				time -= Time.deltaTime;
 			cubeSlicedPrefab = (GameObject)Instantiate (cubeSlicedPrefab, cubePosition, Quaternion.identity);
-            
+
+            gameObject.SetActive(false);
+            Waiter.Wait(0.5f, () =>
+            {
+                // Just to make sure by the time we're back to activate it, it still exists and wasn't destroyed.
+                if (gameObject != null)
+                    gameObject.SetActive(true);
+            });
+
         }
     }
 

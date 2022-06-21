@@ -1204,6 +1204,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8732739175038930198, guid: 1eac463f85630b24186ae010c6983076, type: 3}
+      propertyPath: symbolSlicedPrefab
+      value: 
+      objectReference: {fileID: 3378026700747771242, guid: 8689ed2c3b88ab14382c3a9ac723c9ce, type: 3}
+    - target: {fileID: 8732739175038930198, guid: 1eac463f85630b24186ae010c6983076, type: 3}
       propertyPath: sliceEvent.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}

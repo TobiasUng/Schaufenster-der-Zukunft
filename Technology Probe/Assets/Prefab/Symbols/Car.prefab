@@ -84,8 +84,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b0a32d5b3158048a754861cd0c92ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitSlicedPrefab: {fileID: 4114824236706951282, guid: e8ca8103e3e9ff840ad55be6cf091fc3, type: 3}
+  symbolSlicedPrefab: {fileID: 4114824236706951282, guid: e8ca8103e3e9ff840ad55be6cf091fc3, type: 3}
   startForce: 0
+  isRespawn: 0
   sliceEvent:
     m_PersistentCalls:
       m_Calls: []
