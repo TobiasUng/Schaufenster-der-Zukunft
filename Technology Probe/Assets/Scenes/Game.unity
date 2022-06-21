@@ -474,7 +474,7 @@ MonoBehaviour:
   - {fileID: 1028790862}
   - {fileID: 1088337741}
   startForce: 1
-  startTorque: 0.2
+  startTorque: 0.95
   minDelay: 0.5
   maxDelay: 2
 --- !u!1 &786485667
@@ -631,7 +631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76852001abf53d49872dac9f8f0b165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedObjects: []
   parentObject: {fileID: 786485667}
 --- !u!1 &963194225
 GameObject:
