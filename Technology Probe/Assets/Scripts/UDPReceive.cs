@@ -10,7 +10,7 @@ public class UDPReceive : MonoBehaviour
 
     Thread receiveThread;
     UdpClient client; 
-    public int port = 5052;
+    public int port;
     public bool startRecieving = true;
     public bool printToConsole = false;
     public string data;

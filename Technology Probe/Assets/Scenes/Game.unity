@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 41611089}
   - component: {fileID: 41611088}
   - component: {fileID: 41611087}
-  - component: {fileID: 41611086}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -143,18 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &41611086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41611085}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb89eb74f927324793cb7fc5f64e459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &41611087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -164,7 +151,7 @@ MeshCollider:
   m_GameObject: {fileID: 41611085}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -227,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41611085}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 3.1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.7777778, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -318,7 +305,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.307
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -894,7 +881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   port: 5053
   startRecieving: 1
-  printToConsole: 1
+  printToConsole: 0
   data: 
 --- !u!4 &1893429564
 Transform:
