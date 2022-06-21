@@ -631,7 +631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76852001abf53d49872dac9f8f0b165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedObjects: []
   parentObject: {fileID: 786485667}
 --- !u!1 &963194225
 GameObject:
@@ -855,6 +854,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxAngleDeflection: 7
   SpeedOfPendulum: 1
+--- !u!1001 &1545716018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1167674086, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167674086, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167674088, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876034569460403100, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216250316653465894, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
+      propertyPath: m_Name
+      value: Bike Breakable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee36b1ed7628b964d8f1bc3ac5f63d81, type: 3}
 --- !u!1 &1893429562
 GameObject:
   m_ObjectHideFlags: 0
