@@ -12,7 +12,7 @@ success, img = cap.read()
 h, w, _ = img.shape
 
 myColorFinder = ColorFinder(False)
-hsvVals = {'hmin': 39, 'smin': 89, 'vmin': 60, 'hmax': 66, 'smax': 255, 'vmax': 255}
+hsvVals = {'hmin': 133, 'smin': 0, 'vmin': 0, 'hmax': 179, 'smax': 251, 'vmax': 255}
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serverAddressPort = ("127.0.0.1", 5053)

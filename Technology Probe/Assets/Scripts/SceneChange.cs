@@ -8,10 +8,16 @@ public class SceneChange : MonoBehaviour
 	public void ChangeScene(string sceneName)
 	{
 		print(sceneName);
-		SceneManager.LoadScene("SampleScene");
+		StartCoroutine(waitAndChangeScene(sceneName));
 	}
 	public void Exit()
 	{
 		Application.Quit ();
+	}
+
+	IEnumerator waitAndChangeScene(string sceneName)
+    {
+		yield return new WaitForSeconds(1);
+		SceneManager.LoadScene(sceneName);
 	}
 }
