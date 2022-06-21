@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class CollectObject : MonoBehaviour
 {
-    public List<GameObject> collectedObjects = new List<GameObject>();
+    //public static List<GameObject> collectedObjects = new List<GameObject>();
+    public static Dictionary<string, int> collectedObjects = new Dictionary<string, int>
+    {
+        {"Apple", 0},
+        {"Avocado", 0},
+        {"Atom", 0},
+        {"Bike", 0},
+        {"Car", 0},
+        {"Plane", 0},
+        {"Train", 0},
+        {"Windmill", 0}
+    };
     public GameObject parentObject;
 
 
@@ -25,10 +36,19 @@ public class CollectObject : MonoBehaviour
 
         if(col.tag == "Symbol")
         {
-            collectedObjects.Add(col.transform.gameObject);
+            //collectedObjects.Add(col.transform.gameObject);
+            collectedObjects[col.name]++;
             col.transform.gameObject.SetActive(false);
             col.transform.parent = parentObject.transform;
         }
         
+    }
+
+    private void OnApplicationQuit()
+    {
+        print(collectedObjects["Apple"]);
+        print(collectedObjects["Avocado"]);
+        print(collectedObjects["Atom"]);
+        print(collectedObjects["Bike"]);
     }
 }

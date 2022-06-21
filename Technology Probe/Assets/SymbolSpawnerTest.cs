@@ -50,6 +50,7 @@ public class SymbolSpawnerTest : MonoBehaviour
            
 
             GameObject spawnedFruit = Instantiate(symbolPrefabs[sequence[index]], spawnPoint.position, spawnPoint.rotation);
+            spawnedFruit.name = spawnedFruit.name.Replace("(Clone)", "");
             sequence.RemoveAt(index);
 
 
