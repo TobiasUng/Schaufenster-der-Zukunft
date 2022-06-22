@@ -633,7 +633,7 @@ MonoBehaviour:
   - {fileID: 6484172851518438130, guid: 9ef31f323cef40548a5bb8557a4f1f10, type: 3}
   - {fileID: 2060412531960629092, guid: a1e63e1f6c05f7c47ac7076a18d4449b, type: 3}
   - {fileID: 6651378314715632925, guid: ad8092b00d71aa040a3153d599614fdd, type: 3}
-  symbol_count: 1
+  symbol_count: 5
   sequence: 
   spawnPoints:
   - {fileID: 706344295}
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31eed66e347627445875a9867ccfaef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: 5053
+  port: 5054
   startRecieving: 1
   printToConsole: 0
   data: 
