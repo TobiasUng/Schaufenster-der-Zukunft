@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ScaleObjects : MonoBehaviour
+{
+    public GameObject apple;
+    public GameObject avocado;
+    public GameObject train;
+    public GameObject plane;
+    public GameObject car;
+    public GameObject bicyle;
+    public GameObject windmill;
+    public GameObject atom;
+    
+
+    public void Awake()
+    {
+        apple.transform.localScale = new Vector3 (CollectObject.collectedObjects["Apple"]*0.2, CollectObject.collectedObjects["Apple"]*0.2, CollectObject.collectedObjects["Apple"]*0.2);
+        avocado.transform.localScale = new Vector3 (CollectObject.collectedObjects["Avocado"]*0.2, CollectObject.collectedObjects["Avocado"]*0.2, CollectObject.collectedObjects["Avocado"]*0.2);
+        train.transform.localScale = new Vector3 (CollectObject.collectedObjects["Train"]*0.2, CollectObject.collectedObjects["Train"]*0.2, CollectObject.collectedObjects["Train"]*0.2);
+        plane.transform.localScale = new Vector3 (CollectObject.collectedObjects["Plane"]*0.2, CollectObject.collectedObjects["Plane"]*0.2, CollectObject.collectedObjects["Plane"]*0.2);
+        car.transform.localScale = new Vector3 (CollectObject.collectedObjects["Car"]*0.2, CollectObject.collectedObjects["Car"]*0.2, CollectObject.collectedObjects["Car"]*0.2);
+        bicyle.transform.localScale = new Vector3 (CollectObject.collectedObjects["Bike"]*0.2, CollectObject.collectedObjects["Bike"]*0.2, CollectObject.collectedObjects["Bike"]*0.2);
+        windmill.transform.localScale = new Vector3 (CollectObject.collectedObjects["Windmill"]*0.2, CollectObject.collectedObjects["Windmill"]*0.2, CollectObject.collectedObjects["Windmill"]*0.2);
+        atom.transform.localScale = new Vector3 (CollectObject.collectedObjects["Atom"]*0.2, CollectObject.collectedObjects["Atom"]*0.2, CollectObject.collectedObjects["Atom"]*0.2);
+    }
+}

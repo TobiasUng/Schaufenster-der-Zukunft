@@ -16,13 +16,13 @@ public class ScaleObjects : MonoBehaviour
 
     public void Awake()
     {
-        apple.transform.localScale = new Vector3 (CollectObject.collectedObjects["Apple"], CollectObject.collectedObjects["Apple"], CollectObject.collectedObjects["Apple"]);
-        avocado.transform.localScale = new Vector3 (CollectObject.collectedObjects["Avocado"], CollectObject.collectedObjects["Avocado"], CollectObject.collectedObjects["Avocado"]);
-        train.transform.localScale = new Vector3 (CollectObject.collectedObjects["Train"], CollectObject.collectedObjects["Train"], CollectObject.collectedObjects["Train"]);
-        plane.transform.localScale = new Vector3 (CollectObject.collectedObjects["Plane"], CollectObject.collectedObjects["Plane"], CollectObject.collectedObjects["Plane"]);
-        car.transform.localScale = new Vector3 (CollectObject.collectedObjects["Car"], CollectObject.collectedObjects["Car"], CollectObject.collectedObjects["Car"]);
-        bicyle.transform.localScale = new Vector3 (CollectObject.collectedObjects["Bike"], CollectObject.collectedObjects["Bike"], CollectObject.collectedObjects["Bike"]);
-        windmill.transform.localScale = new Vector3 (CollectObject.collectedObjects["Windmill"], CollectObject.collectedObjects["Windmill"], CollectObject.collectedObjects["Windmill"]);
-        atom.transform.localScale = new Vector3 (CollectObject.collectedObjects["Atom"], CollectObject.collectedObjects["Atom"], CollectObject.collectedObjects["Atom"]);
+        apple.transform.localScale = new Vector3 (CollectObject.collectedObjects["Apple"], CollectObject.collectedObjects["Apple"], CollectObject.collectedObjects["Apple"])/5;
+        avocado.transform.localScale = new Vector3 (CollectObject.collectedObjects["Avocado"], CollectObject.collectedObjects["Avocado"], CollectObject.collectedObjects["Avocado"])/5;
+        train.transform.localScale = new Vector3 (CollectObject.collectedObjects["Train"], CollectObject.collectedObjects["Train"], CollectObject.collectedObjects["Train"])/5;
+        plane.transform.localScale = new Vector3 (CollectObject.collectedObjects["Plane"], CollectObject.collectedObjects["Plane"], CollectObject.collectedObjects["Plane"])/5;
+        car.transform.localScale = new Vector3 (CollectObject.collectedObjects["Car"], CollectObject.collectedObjects["Car"], CollectObject.collectedObjects["Car"])/5;
+        bicyle.transform.localScale = new Vector3 (CollectObject.collectedObjects["Bike"], CollectObject.collectedObjects["Bike"], CollectObject.collectedObjects["Bike"])/5;
+        windmill.transform.localScale = new Vector3 (CollectObject.collectedObjects["Windmill"], CollectObject.collectedObjects["Windmill"], CollectObject.collectedObjects["Windmill"])/5;
+        atom.transform.localScale = new Vector3 (CollectObject.collectedObjects["Atom"], CollectObject.collectedObjects["Atom"], CollectObject.collectedObjects["Atom"])/5;
     }
 }
