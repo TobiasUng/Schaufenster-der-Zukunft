@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="IMG_5245" size="10.000000 13.333333" />
+    <ImageTarget name="arduino" size="5.000000 3.517298" />
+    <ImageTarget name="map2" size="5.000000 3.750000" />
+    <ImageTarget name="forward2" size="5.000000 6.666667" />
+  </Tracking>
+</QCARConfig>
